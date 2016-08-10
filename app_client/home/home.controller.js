@@ -1,5 +1,3 @@
-( function () {
-
   angular
     .module('lawyerApp')
     .controller('homeCtrl', homeCtrl);
@@ -8,7 +6,7 @@
   function homeCtrl ($scope) {
 
     if (window.location.pathname !== '/') {
-      window.location.href = '/#' + window.location.pathname;
+      window.location.href = '#/' + window.location.pathname;
     }
 
     var vm = this;
@@ -27,5 +25,3 @@
       });
     };
 }
-
-}) ();
